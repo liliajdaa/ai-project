@@ -4,8 +4,8 @@ A one-page explainer of artificial intelligence for a general audience: what AI 
 
 By Lilia Jdaa Maniari, November 2026.
 
-- Live site: https://USERNAME.github.io/ai-project/
-- Repository: https://github.com/USERNAME/ai-project
+- Live site: https://liliajdaa.github.io/ai-project/
+- Repository: https://github.com/liliajdaa/ai-project
 
 ## Files
 
