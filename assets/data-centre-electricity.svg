@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220" role="img" aria-labelledby="t d" font-family="IBM Plex Sans, Helvetica Neue, Arial, sans-serif">
+  <title id="t">Global data centre electricity use</title>
+  <desc id="d">About 415 terawatt-hours in 2024 and a projected 945 terawatt-hours in 2030, according to the International Energy Agency.</desc>
+  <rect width="760" height="220" fill="#fbfaf6"/>
+  <!-- grid: x = 190 + TWh * 0.52 -->
+  <g stroke="#e4e2dc" stroke-width="1">
+    <line x1="190" y1="28" x2="190" y2="176"/>
+    <line x1="320" y1="28" x2="320" y2="176"/>
+    <line x1="450" y1="28" x2="450" y2="176"/>
+    <line x1="580" y1="28" x2="580" y2="176"/>
+    <line x1="710" y1="28" x2="710" y2="176"/>
+  </g>
+  <g font-size="12" fill="#5b5b57" text-anchor="middle">
+    <text x="190" y="196">0</text>
+    <text x="320" y="196">250</text>
+    <text x="450" y="196">500</text>
+    <text x="580" y="196">750</text>
+    <text x="710" y="196">1,000 TWh</text>
+  </g>
+  <!-- bars -->
+  <text x="24" y="72" font-size="15" font-weight="600" fill="#141414">2024</text>
+  <text x="24" y="90" font-size="12.5" fill="#5b5b57">≈ 1.5% of world use</text>
+  <rect x="190" y="48" width="215.8" height="44" rx="3" fill="#3a46ff"/>
+  <text x="416" y="76" font-size="15" font-weight="600" fill="#141414">415 TWh</text>
+
+  <text x="24" y="138" font-size="15" font-weight="600" fill="#141414">2030</text>
+  <text x="24" y="156" font-size="12.5" fill="#5b5b57">IEA projection</text>
+  <rect x="190" y="116" width="491.4" height="44" rx="3" fill="#ff5c8a" stroke="#121212" stroke-width="2"/>
+  <text x="670" y="144" font-size="15" font-weight="600" fill="#121212" text-anchor="end">945 TWh</text>
+</svg>

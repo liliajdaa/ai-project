@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI, Without the Hype — an explainer by Lilia Jdaa Maniari</title>
+  <meta name="description" content="A plain-language explainer of artificial intelligence: what it is, where it helps, where it goes wrong, two case studies and what could come next.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-in">
+      <a class="brand" href="#top">AI <span aria-hidden="true">≠</span><span class="sr-only">is not</span> magic</a>
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="#what">What it is</a></li>
+          <li><a href="#impact">Helps / hurts</a></li>
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="#future">Future</a></li>
+          <li><a href="#made">Process</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">An explainer by Lilia Jdaa Maniari · Nov 2026</p>
+          <h1 id="title"><span class="l1">Artificial</span> <span class="l2">intelligence,</span> <span class="l3"><span class="hl">without</span> the hype.</span></h1>
+          <p class="lede">AI writes emails, picks what we buy and increasingly decides on its own. Here is what it is, where it helps, where it fails and what comes next.</p>
+        </div>
+
+        <!-- Interactive: next-word prediction -->
+        <aside class="predict" aria-labelledby="predict-title">
+          <p class="predict-label" id="predict-title">Try it: write like a chatbot</p>
+          <p class="sentence" aria-live="polite"><span id="sentence">Artificial intelligence is</span><span class="caret" aria-hidden="true"></span></p>
+          <ul class="options" id="options">
+            <li><span class="word">a tool</span><span class="bar"><span style="width:34%"></span></span><span class="pct">34%</span></li>
+            <li><span class="word">everywhere</span><span class="bar"><span style="width:27%"></span></span><span class="pct">27%</span></li>
+            <li><span class="word">overhyped</span><span class="bar"><span style="width:21%"></span></span><span class="pct">21%</span></li>
+            <li><span class="word">dangerous</span><span class="bar"><span style="width:18%"></span></span><span class="pct">18%</span></li>
+          </ul>
+          <button class="btn" type="button" id="next-word" hidden>Predict next words</button>
+          <p class="predict-note">Illustration with invented odds. A chatbot picks <em>likely</em> words, not <em>true</em> ones.</p>
+        </aside>
+      </div>
+
+      <div class="legend wrap" aria-label="How claims are labelled">
+        <span><span class="tag fact">Fact</span> verified, with a source</span>
+        <span><span class="tag view">My view</span> my interpretation</span>
+        <span><span class="tag pred">Prediction</span> what might happen</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Likely ≠ true ✶ Check the source ✶ Humans in the loop ✶ Verify through a second channel ✶ </span>
+        <span>Likely ≠ true ✶ Check the source ✶ Humans in the loop ✶ Verify through a second channel ✶ </span>
+      </div>
+    </div>
+
+    <!-- 01 WHAT IS AI -->
+    <section class="block" id="what" aria-labelledby="h-what">
+      <div class="wrap block-grid">
+        <header class="block-head"><span class="num" aria-hidden="true">01</span><h2 id="h-what">What is AI?</h2></header>
+        <div class="block-body">
+          <p><span class="tag fact">Fact</span> There is no single agreed definition. The <a href="https://oecd.ai/en/inside-artificial-intelligence">OECD</a> describes an AI system as one that takes in data, interprets it for a goal, and produces an output: a prediction, a recommendation, a decision or new content.</p>
+          <p>Most of today’s AI is <strong>machine learning</strong>. Instead of following rules written by a programmer, the system learns patterns from enormous numbers of examples. A chatbot has processed billions of sentences, so it is very good at predicting which words come next.</p>
+          <figure class="figure">
+            <picture>
+              <source media="(max-width: 600px)" srcset="assets/how-ai-works-mobile.svg" width="360" height="470">
+              <img src="assets/how-ai-works.svg" width="760" height="300" alt="Diagram: training data teaches a model patterns. New input such as a question or photo goes into the model, which produces an output such as an answer, image or decision. A person should check the output before acting on it.">
+            </picture>
+            <figcaption>How most AI systems work. Based on the <a href="https://oecd.ai/en/inside-artificial-intelligence">OECD’s description</a>.</figcaption>
+          </figure>
+          <p class="callout"><span class="tag view">My view</span> Remember the demo above: AI predicts what is <em>likely</em>, not what is <em>true</em>. That is why it can sound confident and still be wrong.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 HELPS / HURTS -->
+    <section class="block" id="impact" aria-labelledby="h-impact">
+      <div class="wrap block-grid">
+        <header class="block-head"><span class="num" aria-hidden="true">02</span><h2 id="h-impact">Where it helps, where it hurts</h2></header>
+        <div class="compare">
+          <article class="col helps">
+            <h3>Helps</h3>
+            <ul>
+              <li><strong>Science.</strong> <span class="tag fact">Fact</span> AlphaFold predicts the 3D shape of proteins, work recognised by the <a href="https://www.nobelprize.org/prizes/chemistry/2024/press-release/">2024 Nobel Prize in Chemistry</a>. It speeds up research into medicines.</li>
+              <li><strong>Everyday work.</strong> Drafting, translating, summarising and coding in minutes instead of hours.</li>
+              <li><strong>Me.</strong> As a branding and PR student, I used AI to build a working prototype of a fashion search website, something I could not have coded alone.</li>
+            </ul>
+          </article>
+          <article class="col hurts">
+            <h3>Hurts</h3>
+            <ul>
+              <li><strong>Errors.</strong> Confident but wrong answers, often called hallucinations.</li>
+              <li><strong>Bias.</strong> Systems learn from human data and can repeat its unfairness, for example in hiring or lending.</li>
+              <li><strong>Privacy.</strong> Personal data trains these systems and is typed into them every day.</li>
+              <li><strong>Deepfakes and fraud.</strong> Realistic fake video and voices (case A).</li>
+              <li><strong>Dependence.</strong> When a few systems or providers fail, everything built on them fails too.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 CASES -->
+    <section class="block" id="cases" aria-labelledby="h-cases">
+      <div class="wrap block-grid">
+        <header class="block-head"><span class="num" aria-hidden="true">03</span><h2 id="h-cases">Two case studies</h2></header>
+        <div class="tabs" data-tabs>
+          <div class="tablist" role="tablist" aria-label="Case studies" hidden>
+            <button role="tab" id="tab-a" aria-controls="case-a" aria-selected="true">A · The fake meeting</button>
+            <button role="tab" id="tab-b" aria-controls="case-b" aria-selected="false" tabindex="-1">B · The power behind AI</button>
+          </div>
+
+          <article class="case" id="case-a" role="tabpanel" aria-labelledby="tab-a">
+            <p class="case-stat"><span class="big">HK$200M</span><span class="small">lost after one video call</span></p>
+            <h3>The meeting where everyone was fake</h3>
+            <p><span class="tag fact">Fact</span> In January 2024, a finance employee at the Hong Kong office of engineering firm <a href="https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk">Arup</a> joined a video call with the company’s chief financial officer and colleagues. Every other person on the call was a deepfake, built from publicly available video. Following their instructions, the employee made 15 transfers totalling HK$200 million (about US$25.6 million). The fraud surfaced only when the employee checked with head office (<a href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3250851/everyone-looked-real-multinational-firms-hong-kong-office-loses-hk200-million-after-scammers-stage">SCMP</a>).</p>
+            <p><strong>Why it worked:</strong> the employee first suspected the email was phishing, but seeing and hearing familiar faces removed the doubt.</p>
+            <p class="callout"><span class="tag view">My view</span> The lesson is not “learn to spot fakes”, which keeps getting harder. It is to verify through a second channel: call back on a known number and require two approvals for large payments.</p>
+          </article>
+
+          <article class="case" id="case-b" role="tabpanel" aria-labelledby="tab-b">
+            <p class="case-stat"><span class="big">×2.3</span><span class="small">data centre electricity, 2024 → 2030</span></p>
+            <h3>The electricity behind the chatbot</h3>
+            <p><span class="tag fact">Fact</span> Data centres used about 415 TWh of electricity in 2024, roughly 1.5% of the world’s total. The <a href="https://www.iea.org/reports/energy-and-ai/executive-summary">International Energy Agency</a> projects about 945 TWh by 2030, about as much as Japan uses today, with AI as the main driver (<a href="https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/">Scientific American</a>).</p>
+            <figure class="figure">
+              <picture>
+                <source media="(max-width: 600px)" srcset="assets/data-centre-electricity-mobile.svg" width="360" height="220">
+                <img src="assets/data-centre-electricity.svg" width="760" height="220" alt="Bar chart: global data centre electricity use was about 415 terawatt-hours in 2024 and is projected to reach about 945 terawatt-hours in 2030, more than double.">
+              </picture>
+              <figcaption>Global data centre electricity use, TWh. 2030 is an IEA projection.</figcaption>
+            </figure>
+            <p><span class="tag fact">Fact</span> The strain shows in PJM, the largest US grid. Its last capacity auction fell 6.8 GW short of the reserve target meant to limit unexpected outages to one every ten years. PJM expects data centres and other large users could add up to 70 GW by 2038 (<a href="https://www.utilitydive.com/news/pjm-backstop-capacity-auction-ferc-data-centers/826792/">Utility Dive</a>). Regulators only partly approved its emergency plan to buy extra power in September 2026, mainly over who should pay (<a href="https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/">Utility Dive</a>).</p>
+            <p class="callout"><span class="tag view">My view</span> AI is not just software in the cloud. It runs on power plants and cables, and households may end up sharing the bill.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 FUTURE -->
+    <section class="block" id="future" aria-labelledby="h-future">
+      <div class="wrap block-grid">
+        <header class="block-head"><span class="num" aria-hidden="true">04</span><h2 id="h-future">What could come next</h2></header>
+        <div>
+          <div class="future">
+            <article><span class="glyph" aria-hidden="true">↗</span><h3>Opportunities</h3><p><span class="tag pred">Prediction</span> AI “agents” that complete whole tasks, faster scientific discovery and tutoring adapted to each student.</p></article>
+            <article><span class="glyph" aria-hidden="true">⚠</span><h3>Security threats</h3><p><span class="tag pred">Prediction</span> Cheaper, more convincing fraud and cyberattacks, and agents making mistakes no one notices in time.</p></article>
+            <article><span class="glyph" aria-hidden="true">⏻</span><h3>Outages and power</h3><p><span class="tag pred">Prediction</span> When a few cloud and AI providers fail, thousands of apps fail with them. Electricity may limit how fast AI grows.</p></article>
+            <article><span class="glyph" aria-hidden="true">◉</span><h3>Human supervision</h3><p><span class="tag fact">Fact</span> The US <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> asks organisations to govern, map, measure and manage AI risks: know what your AI does, test it, watch it and plan for failure.</p></article>
+          </div>
+          <blockquote class="closing"><p><span class="tag view">My view</span> The people who benefit most will not be those who use AI the most, but those who check it best.</p></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 PROCESS -->
+    <section class="block" id="made" aria-labelledby="h-made">
+      <div class="wrap block-grid">
+        <header class="block-head"><span class="num" aria-hidden="true">05</span><h2 id="h-made">How this website was made</h2></header>
+        <div class="block-body prose">
+          <p>I kept two case studies, a fraud and the power grid, because they show AI’s human and physical sides. Labelling every claim as fact, view or prediction kept evidence and opinion apart. The look borrows from risograph posters: condensed type, two inks and offset shadows. The next-word demo makes the key idea, likely is not true, something you can try rather than just read.</p>
+          <p>The page uses semantic HTML (header, nav, main, section, article, figure). CSS custom properties hold the colours; CSS Grid and <code>clamp()</code> adapt the layout from phone to desktop. JavaScript runs the demo and the case-study tabs, built with ARIA roles and arrow-key support. Without JavaScript, everything is still readable.</p>
+          <p>The diagram and chart are SVG files made for this site, with alt text. After testing on my phone and with the keyboard, I [write here what you changed after testing].</p>
+          <p>I used Claude to help plan the structure and write a first version of the code and text. I checked every figure against the linked sources and edited the wording myself.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="block" id="sources" aria-labelledby="h-sources">
+      <div class="wrap block-grid">
+        <header class="block-head"><span class="num" aria-hidden="true">→</span><h2 id="h-sources">Sources</h2></header>
+        <ol class="sources">
+          <li><a href="https://oecd.ai/en/inside-artificial-intelligence">How artificial intelligence works</a>, OECD.AI.</li>
+          <li><a href="https://www.nobelprize.org/prizes/chemistry/2024/press-release/">The Nobel Prize in Chemistry 2024, press release</a>, Nobel Prize Outreach.</li>
+          <li><a href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3250851/everyone-looked-real-multinational-firms-hong-kong-office-loses-hk200-million-after-scammers-stage">“Everyone looked real”: multinational firm’s Hong Kong office loses HK$200 million after scammers stage deepfake video meeting</a>, South China Morning Post, Feb 2024.</li>
+          <li><a href="https://edition.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk">British engineering giant Arup revealed as $25 million deepfake scam victim</a>, CNN, May 2024.</li>
+          <li><a href="https://www.iea.org/reports/energy-and-ai/executive-summary">Energy and AI: executive summary</a>, International Energy Agency, 2025.</li>
+          <li><a href="https://www.scientificamerican.com/article/ai-will-drive-doubling-of-data-center-energy-demand-by-2030/">Data centers will use twice as much energy by 2030, driven by AI</a>, Scientific American / Nature, Apr 2025.</li>
+          <li><a href="https://www.utilitydive.com/news/pjm-backstop-capacity-auction-ferc-data-centers/826792/">PJM files backstop auction plan at FERC to meet capacity shortfall</a>, Utility Dive, Aug 2026.</li>
+          <li><a href="https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/">FERC chair slams PJM “mess” as country’s largest grid operator delays power auction</a>, Utility Dive, Sep 2026.</li>
+          <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">AI Risk Management Framework</a>, NIST.</li>
+          <li>Further reading: <a href="https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/">How AI image generators work</a>, The Washington Post.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="ack"><strong>AI-use acknowledgement.</strong> I acknowledge the use of <a href="https://claude.ai">Claude</a> (Anthropic) to brainstorm the structure, draft code and text, and suggest revisions. I checked the facts against the sources above, edited the content and tested the code. The final work is my responsibility.</p>
+      <p class="credit">© 2026 Lilia Jdaa Maniari · HTML, CSS and a little JavaScript · Published with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-labelledby="t d" font-family="IBM Plex Sans, Helvetica Neue, Arial, sans-serif">
+  <title id="t">How most AI systems work</title>
+  <desc id="d">Training data teaches a model patterns. New input goes into the model, which produces an output. A person should check the output before acting on it.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#5b5b57"/>
+    </marker>
+  </defs>
+  <rect width="760" height="300" fill="#fbfaf6"/>
+
+  <!-- Training data -->
+  <rect x="214" y="24" width="170" height="64" rx="8" fill="#f2f0ea" stroke="#121212" stroke-width="1.25"/>
+  <text x="299" y="51" text-anchor="middle" font-size="15" font-weight="600" fill="#141414">Training data</text>
+  <text x="299" y="71" text-anchor="middle" font-size="12.5" fill="#5b5b57">millions of examples</text>
+  <line x1="299" y1="88" x2="299" y2="150" stroke="#5b5b57" stroke-width="1.25" marker-end="url(#arrow)"/>
+  <text x="310" y="124" font-size="12.5" fill="#5b5b57" font-style="italic">learns patterns</text>
+
+  <!-- Input -->
+  <rect x="24" y="154" width="150" height="80" rx="8" fill="none" stroke="#121212" stroke-width="1.25"/>
+  <text x="99" y="183" text-anchor="middle" font-size="15" font-weight="600" fill="#141414">Input</text>
+  <text x="99" y="203" text-anchor="middle" font-size="12.5" fill="#5b5b57">a question, a photo,</text>
+  <text x="99" y="220" text-anchor="middle" font-size="12.5" fill="#5b5b57">sensor data</text>
+
+  <!-- Model -->
+  <rect x="214" y="154" width="170" height="80" rx="8" fill="#e3e5ff" stroke="#3a46ff" stroke-width="2"/>
+  <text x="299" y="183" text-anchor="middle" font-size="15" font-weight="600" fill="#141414">Model</text>
+  <text x="299" y="203" text-anchor="middle" font-size="12.5" fill="#2f38d6">predicts the most</text>
+  <text x="299" y="220" text-anchor="middle" font-size="12.5" fill="#2f38d6">likely answer</text>
+
+  <!-- Output -->
+  <rect x="424" y="154" width="160" height="80" rx="8" fill="none" stroke="#121212" stroke-width="1.25"/>
+  <text x="504" y="183" text-anchor="middle" font-size="15" font-weight="600" fill="#141414">Output</text>
+  <text x="504" y="203" text-anchor="middle" font-size="12.5" fill="#5b5b57">an answer, an image,</text>
+  <text x="504" y="220" text-anchor="middle" font-size="12.5" fill="#5b5b57">a decision</text>
+
+  <!-- Person -->
+  <rect x="624" y="154" width="112" height="80" rx="8" fill="none" stroke="#b0164f" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="680" y="183" text-anchor="middle" font-size="15" font-weight="600" fill="#141414">A person</text>
+  <text x="680" y="203" text-anchor="middle" font-size="12.5" fill="#b0164f">checks before</text>
+  <text x="680" y="220" text-anchor="middle" font-size="12.5" fill="#b0164f">acting</text>
+
+  <!-- Arrows -->
+  <line x1="174" y1="194" x2="210" y2="194" stroke="#5b5b57" stroke-width="1.25" marker-end="url(#arrow)"/>
+  <line x1="384" y1="194" x2="420" y2="194" stroke="#5b5b57" stroke-width="1.25" marker-end="url(#arrow)"/>
+  <line x1="584" y1="194" x2="620" y2="194" stroke="#5b5b57" stroke-width="1.25" marker-end="url(#arrow)"/>
+
+  <text x="24" y="276" font-size="12.5" fill="#5b5b57">The model does not look facts up: it predicts what is likely, based on patterns in its training data.</text>
+</svg>
